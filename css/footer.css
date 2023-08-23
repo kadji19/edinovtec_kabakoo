@@ -1,0 +1,17 @@
+.footer{
+    /* margin-top: 70vh; */
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(94, 82, 109);
+    text-align: center;
+}
+
+@media screen and (min-width: 1880px) {
+
+    .footer{
+        font-size: 30px;
+    }
+
+}

@@ -1,0 +1,150 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(177, 135, 199, 0.692);
+}
+
+.header{
+    width: 100%;
+    height: 11vh;
+/*     background-color: rgb(217, 201, 255); */
+    background-color: #fffaee;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+}
+
+.header_box{
+    width: 30%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+
+.nav{
+    list-style: none;
+    font-size: 20px;
+   
+}
+
+.nav li a{
+    color: #190d35;
+    text-decoration: none;
+}
+
+
+
+.logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_image{
+    width: 300px;
+}
+
+.icons{
+    width: 30%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.social_icon{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon{
+    font-size: 25px;
+    color:#5e33e0;
+}
+
+.button{
+    display: none;
+}
+
+
+
+
+@media screen and (max-width: 765px) {
+
+    .header_box{
+        width: 80%;
+    }
+    
+
+    .button{
+        display: block;  
+    }
+    
+    .humbuger_btn{
+        background-color: transparent;
+        font-size: 45px;
+        border: none;
+    }
+
+    .btn_croi{
+        background-color: transparent;
+        font-size: 45px;
+        border: none;
+        position: fixed;
+        top: 2vh;
+        right: 2%;
+    }
+
+    .menu{
+        position: absolute;
+        top: 0vh;
+        left: 0%;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2vh;
+        background-color: #fffaee;
+        transform: translateY(-100%);
+        transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+    }
+
+    .active{
+        transform: translate(0);
+    }
+
+    .icons{
+        position: absolute;
+        top: 80vh;
+        left: 0%;
+        width: 100%;
+        min-height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid #8f8f8fa6;
+        visibility: hidden;
+
+    }
+
+    .active_icons{
+        visibility: visible;
+    }
+
+    
+
+    
+}

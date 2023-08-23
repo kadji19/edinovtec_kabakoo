@@ -1,0 +1,123 @@
+  @import url('https://fonts.googleapis.com/css2?family=Belleza&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+
+
+.container{
+  margin-top: 12vh;
+    font-family: 'Belleza', sans-serif;
+}
+.paragraphe{
+    margin: 40px;
+}
+
+.paragraphe h1{
+    text-align: center;
+}
+
+.embed-content{
+/*     position: absolute;
+    top: 0;
+    left: 0; */
+    width: 100%;
+    height: 100vh;
+}
+
+.gallery_photos{
+    padding: 40px 0;
+}
+
+.gallery {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vmin;
+    padding: 0 14px;
+  }
+  .gallery::after {
+    content:'';
+    display:block;
+    flex-grow: 10;
+  }
+  .gallery li {
+    list-style-type: none;
+    height: 350px;
+    flex-grow: 1;
+  }
+  .gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media screen and (min-width: 1880px) {
+
+        .embed-content{
+          width: 100%;
+          height: 138vh;
+      }
+
+      
+      .paragraphe{
+        font-size: 30px;
+    }
+
+      .gallery {
+        max-width: 2500px;
+      }
+          .gallery li {
+            list-style-type: none;
+            height: 400px;
+            flex-grow: 1;
+          }
+    }
+    
+
+  @media screen and (max-width: 1110px) {
+
+    .embed-content{
+      width: 100%;
+      height: 50vh;
+  }
+
+      .gallery li {
+        list-style-type: none;
+        height: 300px;
+        flex-grow: 1;
+      }
+}
+
+  @media screen and (max-width: 900px) {
+
+    .embed-content{
+      width: 100%;
+      height: 40vh;
+  }
+
+      .gallery li {
+        list-style-type: none;
+        height: 200px;
+        flex-grow: 1;
+      }
+}
+
+  @media screen and (max-width: 550px) {
+
+      .gallery li {
+        list-style-type: none;
+        height: 110px;
+        flex-grow: 1;
+      }
+
+      .paragraphe{
+        margin: 20px;
+        font-size: 15px;
+    }
+    
+
+      .embed-content{
+            width: 100%;
+            height: 27vh;
+        }
+}

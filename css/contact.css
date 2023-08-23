@@ -1,0 +1,102 @@
+.container{
+    margin-top: 12vh;
+      font-family: 'Belleza', sans-serif;
+  }
+
+  
+.column11{
+    margin: 0 auto;
+    height: 90vh;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.column11 span{
+    font-size: 30px;
+    font-weight: bold;
+}
+.column11 form{
+    height: 65vh;
+    width: 97%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: rgba(187, 187, 187, 0.918);
+}
+
+.form_control{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 18px;
+}
+
+
+.column11 form textarea{
+    border: 1px solid rgba(179, 179, 179, 0.61);
+    border-radius: 5px;
+    outline: none;
+}
+
+
+
+.column11 form label{
+    color: rgb(55, 14, 94);
+}
+
+.column11 form input{
+    height: 7vh;
+    width: 99%;
+    border: 1px solid  rgba(179, 179, 179, 0.61);
+    border-radius: 5px;
+    outline: none;
+}
+
+.column11 button{
+    height: 8vh;
+    width: 20%;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    color:  #fff;
+    background: rgba(75, 20, 128, 0.61);
+}
+
+@media screen and (max-width: 900px) {
+
+    .column11{
+        height: 70vh;
+        width: 50%;
+
+    }
+
+    .column11 form{
+        height: 50vh;
+        width: 97%;
+    }
+
+    .column11 button{
+        height: 8vh;
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .column11{
+        height: 70vh;
+        width: 70%;
+    }
+
+    .column11 form{
+        height: 50vh;
+        width: 97%;
+    }
+
+    .column11 button{
+        height: 8vh;
+        width: 40%;
+    }
+}
